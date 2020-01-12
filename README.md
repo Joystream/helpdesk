@@ -52,6 +52,7 @@
     - [Description](#description-3)
     - [Incentives](#incentives-3)
     - [Payouts](#payouts-3)
+- [Role Coordination](#role-coordination)
 - [Other Features and Future Roles](#other-features-and-future-roles)
   - [Upload Content](#upload-content)
   - [On-Chain Forum](#on-chain-forum)
@@ -208,6 +209,31 @@ If you want, you can just make a PR directly, and your contribution will be comp
 ### Payouts
 
 The contributor must include either their Joystream or monero address when submitting the issue/PR. If you choose the former, you must then make sure to add your monero address to the `memo` field of your Joystream address.
+
+# Role Coordination
+
+We have decided to use Telegram to allow workers to coordinate with each other.
+
+<img src="img/telegram.jpg" width="400">
+
+In the future, communication between actors in our governance system will be managed by an on-chain communication solution. For the moment however, it is necessary to do this through a third party application.
+
+We feel that the privacy features of Telegram make it the most effective option for this at the moment.
+
+There are currently four groups for the acropolis testnet. We will be adding more groups upon the launch of our Rome testnet (currenly in development).
+
+- Validators
+- Council Members
+- Storage Providers
+- Builders and Bug Reporters
+- Content Creator _(not yet launched)_
+- Content Curator _(not yet launched_
+
+## Account Linking
+
+In order for us and other members of the group to link your Telegram identity to your keys and accounts on our testnet, we will need you to
+
+For this reason we encourage you to set up a separate Telegram account
 
 # Other Features and Future Roles
 
