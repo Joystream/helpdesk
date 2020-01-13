@@ -53,6 +53,7 @@
     - [Incentives](#incentives-3)
     - [Payouts](#payouts-3)
 - [Role Coordination](#role-coordination)
+    - [Account Linking](#account-linking)
 - [Other Features and Future Roles](#other-features-and-future-roles)
   - [Upload Content](#upload-content)
   - [On-Chain Forum](#on-chain-forum)
