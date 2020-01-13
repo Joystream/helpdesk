@@ -212,28 +212,30 @@ The contributor must include either their Joystream or monero address when submi
 
 # Role Coordination
 
-We have decided to use Telegram to allow workers to coordinate with each other.
+We have decided to use [Telegram](https://telegram.org/) to allow workers to coordinate with each other.
+
+In the future, communication between actors in our governance system will be managed by an on-chain communication solution. For the moment however, as this chat client does not exist, it is necessary to conduct the communication necessary to perform your role through a third-party application.
+
+We feel that the privacy features of Telegram make it the most effective option for this purpose at the moment, though we are open to suggestions regarding alternatives from members of our community!
+
+There are currently four active chat groups for the Acropolis testnet. We will be adding more groups upon the launch of our Rome testnet (currenly in development).
 
 <img src="img/telegram.jpg" width="400">
 
-In the future, communication between actors in our governance system will be managed by an on-chain communication solution. For the moment however, it is necessary to do this through a third party application.
+#### Currently Active Groups
 
-We feel that the privacy features of Telegram make it the most effective option for this at the moment.
-
-There are currently four groups for the acropolis testnet. We will be adding more groups upon the launch of our Rome testnet (currenly in development).
-
-- Validators
-- Council Members
-- Storage Providers
-- Builders and Bug Reporters
+- Validators ([invite link](example))
+- Council Members ([invite link](example))
+- Storage Providers ([invite link](example))
+- Builders and Bug Reporters ([invite link](example))
 - Content Creator _(not yet launched)_
 - Content Curator _(not yet launched_
 
 ## Account Linking
 
-In order for us and other members of the group to link your Telegram identity to your keys and accounts on our testnet, we will need you to
+In order for us and other members of the group to link your Telegram identity to your keys and accounts on our testnet, we will need you to mention your Telegram username within the `memo` of the Pioneer (testnet portal) account you are using to perform your role.
 
-For this reason we encourage you to set up a separate Telegram account
+You may want to consider seting up a separate Telegram account from your normal one to avoid your testnet activities being linked to your real-world identity, though this is entirely optional.
 
 # Other Features and Future Roles
 
