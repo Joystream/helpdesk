@@ -2,7 +2,7 @@
 
 <div align="center">
   <h4>This is a step-by-step guide to setup your <a href="https://github.com/Joystream/substrate-node-joystream">full node</a>, and get started as a Validator on the latest
-  <a href="https://testnet.joystream.org/pioneer">Joystream Testnet</a>.<h4>
+  <a href="https://testnet.joystream.org">Joystream Testnet</a>.<h4>
 </div>
 
 
@@ -48,7 +48,7 @@ If you want to earn more `Joy` tokens, but for some reason can't or won't become
 
 # Instructions
 
-The instructions below covers Mac and Linux (64 bit and armv7). Windows binaries are currently not available. As a general note, remember to use your `stash` key when setting the `memo` to qualify for the monero rewards, not controller this time!
+The instructions below covers Mac and Linux (x86_64 and armv7). Windows binaries are currently not available. As a general note, remember to use your `stash` key when setting the `memo` to qualify for the monero rewards, not controller this time!
 
 **Note**
 If you are just running a node, and don't want to be a `Validator`, you can skip the flags
@@ -197,7 +197,7 @@ Now it's time to configure your keys to start validating. Go [here](#configure-y
 
 While the node is syncing, you can start the process of setting up the rest.
 
-1. Go to the [Pioneer App](https://testnet.joystream.org/pioneer), and select `My keys` in the sidebar. Click the `Create keys` tab.
+1. Go to the [Pioneer App](https://testnet.joystream.org/), and select `My keys` in the sidebar. Click the `Create keys` tab.
 
 Names are entirely optional, but the next steps will be easier if you follow the system suggested.
 
@@ -242,7 +242,7 @@ curl: (7) Failed to connect to localhost port 9933: Connection refused
 {"jsonrpc":"2.0","error":{"code":-32601,"message":"Method not found"},"id":1}
 ```
 
-2. Back in [Pioneer](testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
+2. Back in [Pioneer](https://testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
 3. Click the `+ New stake` button, and select the keys from the first two dropdowns.
 4. In the third field, enter the amount you want to stake (the maximum amount is the tokens in the account -1).
 5. In the bottom dropdown, select the payment destination. Your selection here depends on your preferences.
@@ -441,7 +441,7 @@ This might also come in handy if there are too many `validators` and you don't h
 
 #### Generate your keys
 
-1. Go to the [Pioneer App](https://testnet.joystream.org/pioneer), and select `My keys` in the sidebar. Click the `Create keys` tab.
+1. Go to the [Pioneer App](https://testnet.joystream.org), and select `My keys` in the sidebar. Click the `Create keys` tab.
 
 Names are entirely optional, but the next steps will be easier if you follow the system suggested.
 
@@ -467,7 +467,7 @@ If you want/need more, ask in the telegram chat. Note that long time followers w
 
 In order to be a `Nominator`, you need to stake. Note that you may have to refresh your browser if you're not seeing the options right away.
 
-1. In [Pioneer](testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
+1. In [Pioneer](https://testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
 2. Click the `+ New stake` button, and select the keys from the first two dropdowns.
 3. In the third field, enter the amount you want to stake (the maximum amount is the tokens in the account -1).
 4. In the bottom dropdown, select the payment destination. Your selection here depends on your preferences.
