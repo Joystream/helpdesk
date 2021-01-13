@@ -10,6 +10,7 @@
 Table of Contents
 ==
 <!-- TOC START min:1 max:4 link:true asterisk:false update:true -->
+- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
 - [About The Curator Lead](#about-the-curator-lead)
 - [Hiring Curator Lead](#hiring-curator-lead)
@@ -132,7 +133,7 @@ Note that although some values are stated as `u128` or other confusing types, yo
 If successfully submitted, you can look at your Opening using the `working-groups:opening <WGOPENINGID> -g curators`, which returns something like:
 
 ```
-urrent Group: curators
+Current Group: curators
 
 ______________ Human readable text _______________
 
