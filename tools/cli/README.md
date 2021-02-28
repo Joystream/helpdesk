@@ -7,6 +7,7 @@ Table of Content
     - [Build Yourself](#build-yourself)
     - [Both](#both)
   - [Getting Started](#getting-started)
+  - [Helpful Links](#helpful-links)
 <!-- TOC END -->
 
 # Overview
@@ -80,3 +81,8 @@ Note that your imports and setting are stored locally at:
 - `/Users/<Username>/Library/Application Support/joystream-cli` (Mac OS)
 
 For each command, try `--help` for info on `args` and `options`. For an overview of all `help` outputs, and more info on the CLI, go [here](https://github.com/Joystream/joystream/tree/master/cli).
+
+## Helpful Links
+
+ - For detailed step-by-step guide on how to use `joystream-cli` based on the example of uploading videos using a Windows machine refer to this guide on [medium](https://cyberguy23.medium.com/how-to-upload-videos-to-joystream-from-windows-1dad195956a1) from cyberguy 
+ 
