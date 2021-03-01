@@ -71,7 +71,7 @@ To avoid the Lead paying themselves too much, or frivolous spending in general, 
 If the Lead, or anyone else, wants to replenish or drain the existing Mint, a proposal can be made. If voted in, the new Capacity proposed will be set immediately.
 
 #### Set Election Parameters
-As the Council will see a significantly increased workload, there may be need to change the same Election cycle parameters. This proposal allows the Council to vote on expanding the Council seats, increase or decrease the length of the Voting process, or the minimum stakes required to participate. If this proposal is voted through, a change of these parameters will not be activated until the next election cycle, to avoid the current Council making changes benefiting themselves.
+As the Council will see a significantly increased workload, there may be need to change some Election cycle parameters. This proposal allows the Council to vote on expanding the Council seats, increase or decrease the length of the Voting process, or the minimum stakes required to participate. If this proposal is voted through, a change of these parameters will not be activated until the next election cycle, to avoid the current Council making changes benefiting themselves.
 
 #### Runtime Upgrade
 As before, upgrading the runtime can be proposed by any member, and voted in by the Council. This is a critical proposal that, if a "bad" runtime is proposed and voted in, can kill the blockchain.
