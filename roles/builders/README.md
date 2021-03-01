@@ -42,7 +42,7 @@ If you find a bug in any of our software, reporting these as `Issues` in the mai
   * What were you trying to do?
   * What is your address?
   * What is your balance?
-  * What is the type of `key` (ie. `Schnorrkel`, `Edwards` or `ECDSA`)?
+  * What is the type of `key` (i.e. `Schnorrkel`, `Edwards` or `ECDSA`)?
   * Are you a `Member`?
   * Is the `key` used for another role?
   * etc.
@@ -64,7 +64,7 @@ Jsgenesis will publish these on our [website](https://www.joystream.org/testnet/
 
 The last part is key, as the [Council will act as Project Managers](/roles/council-members/README.md#managing-community-bounties), and serve as a bridge between Jsgenesis and the individual or group working on them.
 
-Because of this, you should regularly monitor the [on-chain forum](testnet.joystream.org/#/forum), and the [Community Repo](https://github.com/Joystream/community-repo) to stay updated on the status and progress of these before you jump in to action.
+Because of this, you should regularly monitor the [on-chain forum](https://testnet.joystream.org/#/forum), and the [Community Repo](https://github.com/Joystream/community-repo) to stay updated on the status and progress of these before you jump in to action.
 
 ### Types of Tasks
 The tasks associated with these Community Bounties will ideally try to solve some problem either for the community or Jsgenesis, but in some cases, their main purpose will be to create some fun and/or attract new members to the community.
@@ -91,7 +91,7 @@ Over time, the tasks should allow people with different skillsets and interests 
   - Research interesting projects
   - Tokenomics research
 - Reviewing
-  - All of the above
+  - All the above
 
 ### Structure Example
 An example of structure for a Community Bounty, as published by Jsgenesis.
@@ -110,17 +110,17 @@ An example of structure for a Community Bounty, as published by Jsgenesis.
 - `Review period:` - A period of time during which Jsgenesis review and grade the deliverable after it has been "officially" submitted to them.
 
 In addition to these, there is some other information that may or may not be included:
-- `Rules:` - Although it will usually be up to the Council the define the [rules](#rules), Jsgenesis may in some circumstances choose to set them themselves. Examples of this could be:
+- `Rules:` - Although it will usually be up to the Council to define the [rules](#rules), Jsgenesis may in some circumstances choose to set them themselves. Examples of this could be:
   - Specifying a [format](#format) and workflow
   - Assigning, or "reserving" the rights for one or more community members to work on the KPI for some period of time
-- `Deadline:` - In some cases, a Community Bounty could have a deadline for the when the deliverable must be made. Although Jsgenesis reserves the right not to grade or reward any submissions made after the deadline, it doesn't necessarily mean any work will be in vain:
+- `Deadline:` - In some cases, a Community Bounty could have a deadline for when the deliverable must be made. Although Jsgenesis reserves the right not to grade or reward any submissions made after the deadline, it doesn't necessarily mean any work will be in vain:
   - Late submissions may still be accepted, with full or partial rewards
     - especially if the delay can be attributed to the Council
   - It may be slightly modified, and re-published under a different `ID`
-  - It may renewed with a new deadline under a different `ID`
+  - It may be renewed with a new deadline under a different `ID`
 
 ### Workflow
-As the Council are responsible for establishing the rules, format and workflow, we again advise prospective participants to lookup the specifics for a particular Bounty using the [on-chain forum](testnet.joystream.org/#/forum).
+As the Council are responsible for establishing the rules, format and workflow, we again advise prospective participants to lookup the specifics for a particular Bounty using the [on-chain forum](https://testnet.joystream.org/#/forum).
 
 
 #### Reward Distribution

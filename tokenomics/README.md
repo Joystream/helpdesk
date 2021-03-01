@@ -46,7 +46,7 @@ Jsgenesis will try to mimic the market forces of supply and demand, by rewarding
 There are many inflationary forces in the network, but not all of them will impact the exchange rate. The main ones are recurring rewards, and other costs associated with achieving KPIs.
 
 - Recurring rewards, currently paid to:
-  - [Council Members](/roles/council-members) for running and managing the platform's day to day operations
+  - [Council Members](/roles/council-members) for running and managing the platform's day-to-day operations
   - [Storage Providers](/roles/storage-providers) for receiving, storing and serving content files
   - [Content Curators](/roles/content-curators) for monitoring and curating content and channels
 - Automatic rewards, to [Validators](/roles/validators) and [Nominators](/roles/validators/README.md#nominating) are minted as rewards for finding blocks, and keeping the network up and running
@@ -99,7 +99,7 @@ Each individual KPI in the set will:
 - (usually) last during the entire Term of the Council
 - be graded (individually) a few days after the end of said Term
 
-The sum of the rewards earned will be given directly to the individual Council Members and those that voted for them, without affecting the overall exchange rate, by topping up the [Fiat Pool](#fiat-pool) and minting new tokens.
+The sum of the rewards earned will be given directly to the individual Council Members, and those that voted for them, without affecting the overall exchange rate, by topping up the [Fiat Pool](#fiat-pool) and minting new tokens.
 
 As the Council KPIs mainly apply to prospective Council Members, the full details can be found under their role section [here](/roles/council-members/README.md#council-kpis).
 
@@ -172,9 +172,9 @@ All else being equal, this will reduce the tJOY issuance from `10,000 to 9,500`,
 
 Furthermore, suppose the user, after considering their skillset and rate of return, decided that the best option for them was to stake their remaining `1,000 tJOY` for the role of `Storage Provider`, and assume further that the payout for this role was `2 tJOY per 3600 blocks` (6 hours).
 
-Assuming again all else being equal, ie. the only token inflation on the network was the payout for *this* user, the payout stays the same, and our user performs their job satisfactory, they can expect to cash in `560 tJOY` every week. After the first week, the total issuance is now `10,060 tJOY`, and the fiat pool is now `$950 USD`. The user cash out their `560 tJOY`, and with a rate of `~0.094 tJOY/USD`, will receive `$52.9 USD` for their job.
+Assuming again all else being equal, i.e. the only token inflation on the network was the payout for *this* user, the payout stays the same, and our user performs their job satisfactory, they can expect to cash in `560 tJOY` every week. After the first week, the total issuance is now `10,060 tJOY`, and the fiat pool is now `$950 USD`. The user cash out their `560 tJOY`, and with a rate of `~0.094 tJOY/USD`, will receive `$52.9 USD` for their job.
 
-If the user had instead chosen to exchange all their `1,500tJOY` in the first place, the would have locked in a value of `$150 USD`. Their actual choice however, resulted in having cashed in a total of `$102.9 USD`, with another `1,000` tJOY worth `$94.4 USD` at the prevailing rates, for a total of `$197.3 USD`.
+If the user had instead chosen to exchange all their `1,500tJOY` in the first place, they would have locked in a value of `$150 USD`. Their actual choice however, resulted in having cashed in a total of `$102.9 USD`, with another `1,000` tJOY worth `$94.4 USD` at the prevailing rates, for a total of `$197.3 USD`.
 
 In practice, the system will be far more complex than what is outlined above. For more precise calculations, please use [the spreadsheet](https://docs.google.com/spreadsheets/d/13Bf7VQ7-W4CEdTQ5LQQWWC7ef3qDU4qRKbnsYtgibGU/edit?usp=sharing).
 
@@ -189,14 +189,14 @@ Currently, the status of the roles and rewards are:
 -   5 slots filled, 1 slot open
 -   Stake is `3500 tJOY`, cost of entering is `200 tJOY`
 -   Rewards are `4 tJOY/600` blocks per slot
--   The users finds that running a Storage Provider costs them `$4 USD per week`
+-   The users find that running a Storage Provider costs them `$4 USD per week`
 
 **Validators**
 
 -   All 10 slots filled
--   Lowest current stake in the pool is `2500 tJOY`
+-   The lowest current stake in the pool is `2500 tJOY`
 -   Rewards are `575 tJOY/100800 blocks` in total
--   The users finds that running a Storage Provider costs them `$1 USD per week`
+-   The users find that running a Storage Provider costs them `$1 USD per week`
 
 **Council Members:**
 

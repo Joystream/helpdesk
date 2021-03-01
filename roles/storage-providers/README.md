@@ -56,10 +56,10 @@ Please note that unless there are any openings for new storage providers (which 
 - leaving the role
 
 ## Initial setup
-First of all, you need to connect to a fully synced [Joystream full node](https://github.com/Joystream/joystream/releases). By default, the program assumes you are running a node on the same device. For instructions on how to set this up, go [here](/roles/validators). Note that you can disregard all the parts about keys before applying, and just install the software so it is ready to go.
+First, you need to connect to a fully synced [Joystream full node](https://github.com/Joystream/joystream/releases). By default, the program assumes you are running a node on the same device. For instructions on how to set this up, go [here](/roles/validators). Note that you can disregard all the parts about keys before applying, and just install the software, so it is ready to go.
 We strongly encourage that you run both the [node](/roles/validators#run-as-a-service) and the other software below as a service.
 
-First, you need to setup `node`, `npm` and `yarn`. This is sometime troublesome to do with the `apt` package manager. Go [here](#install-yarn-and-node-on-linux) to do this if you are not confident in your abilities to navigate the rough seas.
+First, you need to set up `node`, `npm` and `yarn`. This is sometime troublesome to do with the `apt` package manager. Go [here](#install-yarn-and-node-on-linux) to do this if you are not confident in your abilities to navigate the rough seas.
 
 Now, get the additional dependencies:
 ```
@@ -83,7 +83,7 @@ $ ipfs daemon
 If you see `Daemon is ready` at the end, you are good!
 
 ### Configure IPFS
-Some of the default configurations needs to be changed, in order to get better performance:
+Some default configurations needs to be changed, in order to get better performance:
 
 ```
 # cuz xyz
@@ -137,7 +137,7 @@ $ systemctl stop ipfs
 
 
 ## Setup Hosting
-In order to allow for users to upload and download, you have to setup hosting, with an actual domain as both Chrome and Firefox requires `https://`. If you have a "spare" domain or subdomain you don't mind using for this purpose, go to your domain registrar and point your domain to the IP you want. If you don't, you will need to purchase one.
+In order to allow for users to upload and download, you have to set up hosting, with an actual domain as both Chrome and Firefox requires `https://`. If you have a "spare" domain or subdomain you don't mind using for this purpose, go to your domain registrar and point your domain to the IP you want. If you don't, you will need to purchase one.
 
 To configure SSL-certificates the easiest is to use [caddy](https://caddyserver.com/), but feel free to take a different approach. Note that if you are using caddy for commercial use, you need to acquire a license. Please check their terms and make sure you comply with what is considered personal use.
 
@@ -232,7 +232,7 @@ $ systemctl stop caddy
 $ caddy reload
 ```
 
-## Install and Setup the Storage Node
+## Install and Set up the Storage Node
 
 First, you need to clone the Joystream monorepo, which contains the storage software.
 Note that if you already have a storage-node installed (or running), go [here](#update-your-storage-node).
@@ -289,7 +289,7 @@ For most users, it might be easiest to:
 ```
 rm -rf ~/.ipfs
 ```
-And go back to [re-install](#install-ipfs).
+Go back to [re-install](#install-ipfs).
 
 ### Applying for a Storage Provider opening
 
@@ -451,7 +451,7 @@ $ systemctl stop storage-node
 
 ### Verify everything is working
 
-In your browser, find and click on an uploaded media file [here](https://testnet.joystream.org//#/media/), then open the developer console, and find the URL of the asset. Copy the `<content-id>`, ie. whatever comes after the last `/`.
+In your browser, find and click on an uploaded media file [here](https://testnet.joystream.org//#/media/), then open the developer console, and find the URL of the asset. Copy the `<content-id>`, i.e. whatever comes after the last `/`.
 
 Then paste the following in your browser:
 `https://<your.cool.url>/storage/swagger.json`
@@ -459,7 +459,7 @@ Which should return a json.
 
 And:
 `https://<your.cool.url>/storage/asset/v0/<content-id>`.
-(eg. `5GPhGYaGumtdpFYowMHY15hsdZVZUyEUe2trgh2vq7zGcFKx`)
+(e.g. `5GPhGYaGumtdpFYowMHY15hsdZVZUyEUe2trgh2vq7zGcFKx`)
 If the content starts playing, that means you are good!
 
 # Troubleshooting
@@ -605,7 +605,7 @@ $ setcap 'cap_net_bind_service=+ep' /usr/local/bin/caddy
 $ ulimit -n 8192
 ```
 
-Configure caddy with `nano ~/Caddyfile` and paste in the following:
+Configure a caddy with `nano ~/Caddyfile` and paste in the following:
 
 ```
 # Storage Node API

@@ -32,9 +32,9 @@ Table of Contents
 
 # Overview
 
-When the `Council` was first introduced, it was only able to vote on whether or not a runtime upgrade should be implemented. This  rarely occurred, making the Council a rather insignificant part of the platform.
+When the `Council` was first introduced, it was only able to vote on whether a runtime upgrade should be implemented. This  rarely occurred, making the Council a rather insignificant part of the platform.
 
-As the `Council` is meant to be be the executive arm of the Joystream governance system, we are adding a proposal system that will allow the users to control most of the day to day decision making on the platform.
+As the `Council` is meant to be the executive arm of the Joystream governance system, we are adding a proposal system that will allow the users to control most of the day-to-day decision-making on the platform.
 
 
 ## Implemented Proposals
@@ -52,7 +52,7 @@ Aka. "Funding Request"
 In general, this proposal will include an amount, and a beneficiary. This can be used in to fund development, pay winners of competitions, bonus payments for a role, or anything else that requires minting new tokens to a specific individual or group.
 
 #### Set Max Validator Count
-The Validators are rewarded for producing blocks, and will share the rewards that are minted each era (target 3600 blocks). This reward is calculated based on the total issuance, and the amount of tJOY staked by the pool of Validators relative to the total issuance. A higher number means smaller rewards for each individual Validator, but set to low and the network grinds to a halt.
+The Validators are rewarded for producing blocks, and will share the rewards that are minted each era (target 3600 blocks). This reward is calculated based on the total issuance, and the amount of tJOY staked by the pool of Validators relative to the total issuance. A higher number means smaller rewards for each individual Validator, but set to low, and the network grinds to a halt.
 
 #### Set Content Curator Lead
 The Content Curator Lead is the first implementation of the concept of Group Leads on the platform. These will in general be responsible for hiring, firing, rewarding and training the group they are leading. They are hired by the council, and will be given a budget to perform their role satisfactory, without inflating the supply more than necessary.
@@ -71,7 +71,7 @@ To avoid the Lead paying themselves too much, or frivolous spending in general, 
 If the Lead, or anyone else, wants to replenish or drain the existing Mint, a proposal can be made. If voted in, the new Capacity proposed will be set immediately.
 
 #### Set Election Parameters
-As the Council will see a significantly increased workload, there may be need to change the some of the Election cycle parameters. This proposal allows the Council to vote on expanding the Council seats, increase or decrease the length of the Voting process, or the minimum stakes required to participate. If this proposal is voted through, a change of these parameters will not be activated until the next election cycle, to avoid the current Council making changes benefitting themselves.
+As the Council will see a significantly increased workload, there may be need to change the same Election cycle parameters. This proposal allows the Council to vote on expanding the Council seats, increase or decrease the length of the Voting process, or the minimum stakes required to participate. If this proposal is voted through, a change of these parameters will not be activated until the next election cycle, to avoid the current Council making changes benefiting themselves.
 
 #### Runtime Upgrade
 As before, upgrading the runtime can be proposed by any member, and voted in by the Council. This is a critical proposal that, if a "bad" runtime is proposed and voted in, can kill the blockchain.
@@ -132,10 +132,10 @@ Below is a list of the states a proposal can be in, and what each of them means:
 - `Active` - the proposal can be voted on, and no resolution has been made
 - `Grace Period` - the proposal has been approved, and is awaiting execution
 - `Executed` - the proposal was approved, and, after a potential `Grace Period`, executed on chain
-- `Execution Failed` - the proposal was approved, and, after a potential `Grace Period`, attempted to be executed on chain. For some reason, the execution failed
+- `Execution Failed` - the proposal was approved, and, after a potential `Grace Period`, attempted to be executed on a chain. For some reason, the execution failed
 - `Rejected` - the proposal was rejected by the council
 - `Slashed` - the proposal was rejected, and the stake of proposer was slashed by the council
-- `Expired` - the council members did not reach consensus and the proposal expired without any action. This can be the result of insufficient voter turnout, or disagreement between the council members
+- `Expired` - the council members did not reach consensus, and the proposal expired without any action. This can be the result of insufficient voter turnout, or disagreement between the council members
 
 ## Proposal Parameters
 The parameters below are specific to each proposal type, and the values are chosen to balance the importance and risks associated with each of them.
@@ -145,14 +145,14 @@ The parameters below are specific to each proposal type, and the values are chos
 - **Approval Quorum [%]** - the amount of votes required to be cast before a proposal _can_ be approved
 - **Approval Threshold [%]** - the required threshold ratio of cast votes for `approve`, relative to those that vote `abstain`, `reject` or `slash`
 - **Slashing Quorum [%]** -  the amount of votes required to be cast before a proposal _can_ lead to slashing the stake of the proposer
-- **Slashing Threshold [%]** - the required threshold ratio of cast votes that slash relative to those that vote approve, abstain or reject.
+- **Slashing Threshold [%]** - the required threshold ratio of cast votes that slash relative to those that vote approves, abstain or reject.
 - **Proposal Stake [tJOY]** - the required stake to create a proposal of this type
 
 There are also some general parameters that applies equally to all proposals, such as fees, length of text allowed, the maximum number of proposals currently in the `active` stage, etc.
 
 ## Proposal Flow
 
-Any member of the platform with a sufficient quantity of tokens to stake can create a proposal. If the proposal includes values that are within the allowable range, and there are fewer `active` proposals than permitted, the proposal was proceed to the `active` state where the council can vote on it.
+Any member of the platform with a sufficient quantity of tokens to stake can create a proposal. If the proposal includes values that are within the allowable range, and there are fewer `active` proposals than permitted, the proposal was proceeded to the `active` state where the council can vote on it.
 
 ### Example
 
@@ -178,7 +178,7 @@ The votes come in, until we have:
 - 0 `Slash`
 - 0 `Abstain`
 
-At this point, the `Approval Quorum` parameter is fulfilled (100%>75% approval), but there are still to few votes cast to fullfill the `Approval Threshold` (at 30%<50%).
+At this point, the `Approval Quorum` parameter is fulfilled (100%>75% approval), but there are still too few votes cast to fulfill the `Approval Threshold` (at 30%<50%).
 
 A few more votes are cast:
 
@@ -205,6 +205,6 @@ A few more votes are cast:
 - 1 `Slash`
 - 1 `Abstain`
 
-At this point, `Approval Quorum` parameter (67%<75% approval)) is not fulfilled, whereas the `Approval Threshold` (50%), is now fulfilled.
+At this point, `Approval Quorum` parameter (67%<75% approval) is not fulfilled, whereas the `Approval Threshold` (50%), is now fulfilled.
 
 A final vote for `Approve` is cast, and the

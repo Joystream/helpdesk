@@ -57,16 +57,16 @@ This can be done very easily through the creation of another proposal by the `Co
 
 ### Processing Applications
 
-The final step in hiring the `Storage Lead` is to create a `Fill Working Group Leader Opening`. The requirements here simply to choose the relevant opening from the drop-down menu and choose betwen the candidate applications (in JSON format) shown on the page.
+The final step in hiring the `Storage Lead` is to create a `Fill Working Group Leader Opening`. The requirements here simply to choose the relevant opening from the drop-down menu and choose between the candidate applications (in JSON format) shown on the page.
 
-Once a candidate has been chosen and the final proposal has passed, the focus is now on the new `Storage Lead`...
+Once a candidate has been chosen, and the final proposal has passed, the focus is now on the new `Storage Lead`...
 
 # Hiring Storage Providers
 
 ## Using the CLI
 Our newly developed Command-Line Interface (CLI) is an essential tool for the Storage Lead, as it is by far the simplest way to hire and manage `Storage Providers` and applicants for this role. The program and its instructions for use can be found [here](https://github.com/Joystream/joystream/tree/master/cli).
 
-All of the useful commands which can be executed by the `Storage Lead` will require the lead to import their "role" key rather than their "member" key. Consequently, in the CLI the `account:import` and `account:choose` commands will need to be used.
+All the useful commands which can be executed by the `Storage Lead` will require the lead to import their "role" key rather than their "member" key. Consequently, in the CLI the `account:import` and `account:choose` commands will need to be used.
 
 ### Create Opening
 
@@ -93,7 +93,7 @@ OPTIONS
                                            later)
 ```
 
-Note that although some values are stated as `u128` or other confusing types, you should provide plaintext or numbers, and the CLI will convert them for you. Once this command is run, the prompts to set up the opening are *somewhat* self-explanatory.
+Note that although some values are stated as `u128` or other confusing types, you should provide a plaintext or numbers, and the CLI will convert them for you. Once this command is run, the prompts to set up the opening are *somewhat* self-explanatory.
 However, here are some pointers when creating an Opening.
 
 #### Application Parameters
@@ -337,18 +337,18 @@ You can find the `WGOPENINGID` in the URL in Pioneer or through a chain state qu
 
 As soon as the opening is in the `In Review` state, you can start hiring!
 
-Simply run `working-groups:fillOpening <WGOPENINGID>` where `<WGOPENINGID>` is the same as earlier, and you will be prompted to select the applicants you wish to hire (using a check-box dialog). The usernames of the candidates will be shown so you don't have to worry about numerical IDs for this part.
+Simply run `working-groups:fillOpening <WGOPENINGID>` where `<WGOPENINGID>` is the same as earlier, and you will be prompted to select the applicants you wish to hire (using a check-box dialog). The usernames of the candidates will be shown, so you don't have to worry about numerical IDs for this part.
 
 # Working As Storage Lead
 
 ## Responsibilities
-As the `Storage Lead` you are responsible for ensuring that `Storage Providers` are performing adequately. They must hold a complete and up-to-date copy of the content directory and ensure uptime in order to effectively serve testnet content consumers.
+As the `Storage Lead` you are responsible for ensuring that `Storage Providers` are performing adequately. They must hold a complete and up-to-date copy of the content directory and ensure the uptime in order to effectively serve testnet content consumers.
 
 If a `Storage Provider` is not performing adequately it is up to you to decide the sanctions for this, which may include slashing and, as a last resort, their eviction from the Storage Working Group.
 
 ## All Commands
 
-Within the CLI, all of the relevant commands for the Storage Lead can be found through the following query:
+Within the CLI, all the relevant commands for the Storage Lead can be found through the following query:
 ```
 working-groups --help
 ```

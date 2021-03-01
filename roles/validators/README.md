@@ -62,7 +62,7 @@ Table of Contents
 
 # Overview
 
-This page contains all information on how to setup your node and becoming a `Validator` on the Joystream Testnets. It will be updated for improvements, and when something changes for new testnets.
+This page contains all information on how to set up your node and becoming a `Validator` on the Joystream Testnets. It will be updated for improvements, and when something changes for new testnets.
 
 If you want to earn more `tJOY` tokens, but for some reason can't or won't become a `Validator`, you can [`Nominate`](#nominating) instead.
 
@@ -262,7 +262,7 @@ curl: (7) Failed to connect to localhost port 9933: Connection refused
 {"jsonrpc":"2.0","error":{"code":-32601,"message":"Method not found"},"id":1}
 ```
 
-2. Back in [Pioneer](testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
+2. Back in [Pioneer](https://testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
 3. Click the `+ Stash` button, and select the keys from the first two dropdowns.
 4. In the third field, enter the amount you want to stake (the maximum amount is the tokens in the account -1).
 5. In the bottom dropdown, select the payment destination. Your selection here depends on your [preferences](#bonding-preferences).
@@ -273,7 +273,7 @@ Refresh your browser, and select the `Waiting` tab. If your account shows under 
 
 ### Stop Validating
 Unless you want to risk getting slashed, you need to "gracefully" stop validating.
-This can be done easily in [Pioneer](testnet.joystream.org/)
+This can be done easily in [Pioneer](https://testnet.joystream.org/)
 1. Click `Validators` in the sidebar, then choose the `Account actions` tab.
 2. Click the "Stop" button to the right, and confirm.
 3. Once you are dropped from the Validator set (can take up to 70min), you can safely stop your node.
@@ -303,7 +303,7 @@ $ nano joystream-node.service
 
 The example below assumes the following:
 - You want to restart your node every 24h (`86400`s)
-- You have setup a user `joystream` to run the node
+- You have set up a user `joystream` to run the node
 - The path to the `joystream-node` binary is `/home/joystream/joystream-node`
 
 ```
@@ -332,7 +332,7 @@ WantedBy=multi-user.target
 
 The example below assumes the following:
 - You want to restart your node every 24h (`86400`s)
-- You have setup a user `root` to run the node
+- You have set up a user `root` to run the node
 - The path to the `joystream-node` binary is `/root/joystream-node`
 
 ```
@@ -406,7 +406,7 @@ $ systemctl start joystream-node
 
 ## Settings
 
-If you don't want to use the default settings, here are some of the options you can configure.
+If you don't want to use the default settings, here are some options you can configure.
 
 ### Bonding preferences
 The bonding preferences decide on how your (tJOY) staking rewards are distributed. There are three alternatives:
@@ -496,7 +496,7 @@ You should now have two sets of keys, namely:
 
 In order to be a `Nominator`, you need to stake. Note that you may have to refresh your browser if you're not seeing the options right away.
 
-1. In [Pioneer](testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
+1. In [Pioneer](https://testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
 2. Click the `+ Stash` button, and select the keys from the first two dropdowns.
 3. In the third field, enter the amount you want to stake (the maximum amount is the tokens in the account -1).
 4. In the bottom dropdown, select the payment destination. Your selection here depends on your [preferences](#bonding-preferences).
@@ -518,7 +518,7 @@ Claiming rewards for a specific Validator can be done by anyone, not just the Va
 ### Claiming in Bulk
 This can only be done if you have the keys for the Validator or Nominator you want to claim for:
 In the UI, Validators can claim rewards in "bulks" of 40 `eras` at the time:
-1. In [Pioneer](testnet.joystream.org/), click `Validators` in the sidebar, and then the `Payouts` tab
+1. In [Pioneer](https://testnet.joystream.org/), click `Validators` in the sidebar, and then the `Payouts` tab
 2. Make sure the `Max, x eras` are selected
 3. At the bottom of the page, all your you will see an overview of:
   - which `eras` you can claim rewards for
@@ -571,7 +571,7 @@ For Substrate based blockchains, the validator rewards depends on some [dynamic 
 3. Issuance `I` - total tJOY tokens in circulation. This can be found:
   - in the [explorer](https://testnet.joystream.org/#/explorer) tab
   - or through a [chain state](https://testnet.joystream.org/#/chainstate) query of `balances.totalIssuance()`
-4. Validator stake (`S_v`) - ie. the total stake of the `validators` set, corresponding to the sum of the stakes of each `validator`, plus the stake of their [nominators](#nominating) if any. This can be found:
+4. Validator stake (`S_v`) - i.e. the total stake of the `validators` set, corresponding to the sum of the stakes of each `validator`, plus the stake of their [nominators](#nominating) if any. This can be found:
   - in the [staking](https://testnet.joystream.org/#/staking/targets) tab (alongside `I`, and the percentage of `S_v / I` - also known as the Active staking ratio, `S_v,ar`, see 5.)
   - or through a [chain state](https://testnet.joystream.org/#/chainstate) query of `staking.erasTotalStake(<EraIndex>)`
     - the `<EraIndex>` can be found by `staking.activeEra()`
@@ -592,7 +592,7 @@ For Substrate based blockchains, the validator rewards depends on some [dynamic 
 - `*` For a variety of reasons (such as latency, validators going down, etc.) an `era` can be as little as 1 `session` and a `session` can be a lot fewer blocks than 100.
 
 ### Validator set and block production
-At the end of each era, a new set of active validators `V_a` is determined by sorting all those that have declared their intention (eg. both the active and next up) by their stake, and selecting up to `V_i` in a descending order.
+At the end of each era, a new set of active validators `V_a` is determined by sorting all those that have declared their intention (e.g. both the active and next up) by their stake, and selecting up to `V_i` in a descending order.
 
 Those selected are treated as equals, and will have the same chance of being selected to produce blocks and thus get an equal share of the rewards. Slashes however, are applied as a percentage of stake, so a validator with more stake risks getting slashed more despite earning the same.
 
@@ -697,13 +697,13 @@ Although there are other reasons for getting slashed as a Validator, the reasons
 ## Offline
 The most likely reason a Validator will get slashed is for going offline without first [stopping](#stop-validating) gracefully.
 
-If `n` Validators go offline, there will be an two "events" at the end of that `session`:
+If `n` Validators go offline, there will be a two "events" at the end of that `session`:
 1. `imOnline:SomeOffline`
 2. `offences.Offence`
 
 ### Offline Example
 Suppose we have two Validators offline, - `v_0` and `v_1`. `v_1` has one nominator `n_1` (all `accountId`/address of their "stash"):
-By selecting the block the event occured in the [explorer](https://testnet.joystream.org/#/explorer), it will appear like so:
+By selecting the block the event occurred in the [explorer](https://testnet.joystream.org/#/explorer), it will appear like so:
 
 **1** `imOnline:SomeOffline`:
 ```
@@ -735,7 +735,7 @@ At the end of the session, at least one validator was found to be offline.
       }
     ]
 ```
-This identities which valididators are reported "offline".
+These identities which validators are reported "offline".
 
 
 **2** `offences.Offence`:
@@ -793,13 +793,13 @@ If you want to stop being a `validator` and move your tokens to other/better use
 
 2. Next you must unbond. In the same window (`Validator -> Account Actions`), next to your keypair, click the rightmost triple dotted "settings" button, select `Unbond funds`, and choose the amount you wish to unbond.
 
-After the transaction has gone through, you will see a new line appearing in the `bonded` column, showing the amount and a "clock" icon. Hovering over this with your cursor will tell you when your unbonding is complete ( starts at <24h / <14,400 blocks), and you can go to the third and final step.
+After the transaction has gone through, you will see a new line appearing in the `bonded` column, showing the amount, and a "clock" icon. Hovering over this with your cursor will tell you when your unbonding is complete ( starts at <24h / <14,400 blocks), and you can go to the third and final step.
 
-3. Within 24h, the tokens should be unbonded, and you will see a new line appearing in the `bonded` column, showing the amount you can claim and a blue "lock" button. Click the button to finalize the unbonding, and your tokens will be "free" to spend from your "stash".
+3. Within 24h, the tokens should be unbonded, and you will see a new line appearing in the `bonded` column, showing the amount you can claim, and a blue "lock" button. Click the button to finalize the unbonding, and your tokens will be "free" to spend from your "stash".
 
 **Notes:**
 - If you have performed multiple unbondings, in different `eras`:
-  - hovering over the "clock" will show multiple entries, eg. `<amount>, <time_left>, <block_left>`
+  - hovering over the "clock" will show multiple entries, e.g. `<amount>, <time_left>, <block_left>`
   - you may also have both the "clock" and "lock" button, if some of your unbondings are completed
   - if you have any pending [slashes](#slashing), these will be deducted when you perform step 3.
 
@@ -852,7 +852,7 @@ To understand what `claimedRewards` means, go [here](#check-claims-made).
 
 2. The `era` should only change every 600 blocks, but certain events may trigger a new era. To calculate when your funds are "free" In `Chain State` -> `staking.currentEra()`. Let output be `<era_current>`
 
-If `<era_unbonded_n>` >= `<era_current_n>`, you can claim the unbonded funds in step 3..
+If `<era_unbonded_n>` >= `<era_current_n>`, you can claim the unbonded funds in step 3.
 
 3. Once the unbonding is complete, go to [extrinsics](https://testnet.joystream.org/#/extrinsics), with the `controller`, select `staking.withdrawUnbonded(num_slashing_spans)`
 

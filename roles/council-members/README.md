@@ -62,7 +62,7 @@ Table of Contents
 # Why Become a Council Member
 As the governance system is arguably the most important component of the platform on mainnet, we are relying on testnets to train and build up an experienced and highly competent group of initial community members that can diligently perform the tasks required of them once we reach the mainnet stage.
 
-A "good" Council needs CMs that all have a strong understanding of both the platform's token economics (["tokenomics"](/tokenomics)) and each of the individual Working Groups and the roles each of these play in making the platform function. Additionally, the composition of each Council should ensure that the group has expertise in every domain, and some CMs with low-level technical understanding will likely be required to provide guidance on other aspects of the project (marketing, legal, strategy etc.).
+A "good" Council needs CMs that all have a strong understanding of both the platform's token economics (["tokenomics"](/tokenomics)) and each of the individual Working Groups, and the roles each of these play in making the platform function. Additionally, the composition of each Council should ensure that the group has expertise in every domain, and some CMs with low-level technical understanding will likely be required to provide guidance on other aspects of the project (marketing, legal, strategy etc.).
 
 ## Rewards and Incentives
 During the Constantinople testnet, Jsgenesis realized we need to put a lot more effort in to attracting, training and retaining these high-quality people. CMs will now be a generously paid role on the platform, and in the new KPI scheme, also see direct rewards for those Councils doing a good job.
@@ -98,7 +98,7 @@ CM_4,5,6=CM_X
   - own: 3k
 Total: 30k
 
-At the end of their term, the KPI payout was USD 300. Half of that is split equally (150/6=25), half is divided by stake.
+At the end of their term, the KPI payout was USD 300. Half of that is split equally (150/6=25), half is divided by the stake.
 
 - CM_1: `(60+25+(150*2/30))=95`
 - CM_2: `(60+25+(150*5/30))=110`
@@ -174,19 +174,19 @@ At the end of the stage, there are three outcomes depending on:
 - the `Candidacy Limit`
 
 ##### Scenario A:
-If: `Council Size <= Applicants <= Candidacy Limit`. Ie. the number of applicants is between the `Council Size` and `Candidacy Limit`.
+If: `Council Size <= Applicants <= Candidacy Limit`. I.e. the number of applicants is between the `Council Size` and `Candidacy Limit`.
 
 The `Announcing` stage ends, with all the applicants proceeding to the `Voting` stage.
 
 ##### Scenario B:
-If: `Candidacy Limit < Applicants`. Ie. the number of applicants is greater than the `Candidacy Limit`.
+If: `Candidacy Limit < Applicants`. I.e. the number of applicants is greater than the `Candidacy Limit`.
 
-All of the applicants are sorted and ranked by their stake. The `Announcing` stage ends, and only those with a rank better than, or equal to, the `Candidacy Limit` will proceed to the `Voting` stage.
+All the applicants are sorted and ranked by their stake. The `Announcing` stage ends, and only those with a rank better than, or equal to, the `Candidacy Limit` will proceed to the `Voting` stage.
 
 The applicants that did not make it to the `Voting` stage get their stake back right away.
 
 ##### Scenario C:
-If: `Applicants < Council Size`. Ie. the number of applicants is smaller than the `Council Size`.
+If: `Applicants < Council Size`. I.e. the number of applicants is smaller than the `Council Size`.
 
 There are not enough applicants to fill the Council slots, and a new `Announcing` stage begins, with all the applicants automatically re-entered.
 
@@ -204,14 +204,14 @@ With your membership key:
 You can vote as many times as you like, for any Applicant (including yourself).
 
 **Important Notes**
-When you submit a Vote, a `Random salt` will be generated for you, and only a `Hash` of the vote will be broadcast and stored on chain. This means:
+When you submit a Vote, a `Random salt` will be generated for you, and only a `Hash` of the vote will be broadcast and stored on a chain. This means:
 - no one will know who you voted for, or how much you staked
 - unless this hash is "revealed" during the [Revealing](#revealing) stage, the vote will not count
 - unless you save the `Random salt` somewhere, you will only be able to "reveal" your vote if:
   - you use the same key, computer and browser - without clearing local storage.
   - if you save the `Random salt`, you only need the key
 - if you voted for one or more active CMs, you can "re-use" your voting stake from the last election cycle
-- this means that you if you staked 10k JOY voting an one or more current CMs, and have 5k "free" balance, you can stake 15k for voting
+- this means that you if you staked 10k JOY voting a one or more current CMs, and have 5k "free" balance, you can stake 15k for voting
 
 ### Revealing
 As soon as the `Voting` stage closes, the `Revealing` stage begins. As stated before, only when a vote is "revealed" will it become public, and count.
@@ -224,7 +224,7 @@ With your membership key (used to vote on the candidates):
 - click the "Reveal" button next to the votes you wish to reveal and confirm
 
 #### End of Revealing
-At the end of the `Revealing` stage, the applicants are sorted and ranked by their total stake, ie. the sum of the stake(s) they bonded during the `Announcing` stage, and the sum of all **"revealed"** votes.
+At the end of the `Revealing` stage, the applicants are sorted and ranked by their total stake, i.e. the sum of the stake(s) they bonded during the `Announcing` stage, and the sum of all **"revealed"** votes.
 
 The applicants ranked within the number equal to the `Council Size` will become CMs.
 
@@ -278,7 +278,7 @@ Before a new `Announcing` stage begins, a new thread will be made on the on-chai
     - Proposal voting history
     - Council KPIs performed
 
-As you are likely to get some follow up questions, it is a good idea to check in at regular intervals to answer these.
+As you are likely to get some follow-up questions, it is a good idea to check in at regular intervals to answer these.
 
 # Elected Council Members
 The CMs have a variety of [tasks](#tasks-overview). Some are pro-active, others are re-active. Some are recurring and predictable, others will require on the spot problem solving.
@@ -329,7 +329,7 @@ In addition to these, there are some other information that may or may not be in
 - `Ends at:` - The exact block height (and approx. date/time) from which the KPI is no longer "Active"
 - `Measurement period:` - Similar to the above
 
-The reason these may not always be present is because the intention is that a Council KPI will be active from the block the Council is elected, until the block a new one replaces them.
+The reason these may not always be present is that the intention is that a Council KPI will be active from the block the Council is elected, until the block a new one replaces them.
 
 ### Scope of Work
 The Council KPIs will emphasize tasks that the Council would be expected to handle or directly delegate once the project is live on mainnet. Instead of partially repeating what is listed [here](#tasks-overview), this section will instead focus on some examples of specific `Success Events`, and workflow.
@@ -365,7 +365,7 @@ Each Council will be prompted to submit deliverables reporting on things like:
 - network statistics
 
 ### Council Secretary
-The Council Secretary is an informal role, where the Council themselves are given some flexibility in deciding on compensation and extending their Scope of Work, outside of what is defined in the Council KPI.
+The Council Secretary is an informal role, where the Council themselves are given some flexibility in deciding on compensation and extending their Scope of Work, outside what is defined in the Council KPI.
 
 The following bullet points should be expected as the `Success Events` for the KPI:
 - A Text [Proposal](#proposals) electing an active CM is "approved" within 24h of a new Term
@@ -484,7 +484,7 @@ A "new" Council must honor any agreements and rules set by their predecessors, f
 The workflow will depend both on the [Reward Distribution](#reward-distribution) and the [Format](#format), and must be established beforehand.
 
 - For "Closed" formats, an Applier must present a bid why they should be assigned the given Bounty. This should include detailed terms, such as time needed, costs, etc. If approved, this makes the terms valid.
-- In some cases, it may make sense to break a Bounty up in to milestones, with partial rewards at each stage. This builds trust as the Council can see the progress being made, and the Assignee can get chunks of the reward along the way.
+- In some cases, it may make sense to break a Bounty up in to milestones, with partial rewards at each stage. These builds trust as the Council can see the progress being made, and the Assignee can get chunks of the reward along the way.
 - In other cases, the person may need some initial funding to get started.
 - For "Closed" formats, the specifics of the workflow could be part of the Applier's application for participation.
 
@@ -501,7 +501,7 @@ This will require some back and forth through multiple Proposals, and should thu
 ##### 2. Work Happens
 For a "Closed" format, it can mean a series of Text and Funding Proposals, waiting, and ongoing communication between the Assigned/Assignees, and the CMs.
 
-For a "Free for All", it can be mean reviewing submitted Deliverables as they come in, or waiting for the deadline. How a Submitter should make the CMs aware of their Deliverable once ready (GitHub, Discord, forum or Proposal) must be defined in the rules. A "First Come First Served" format will be similar to the "Free for All". Once one or more Deliverables are approved, the Submitter(s) should be considered as Assigned in Step 3.
+For a "Free for All", it can be mean reviewing submitted Deliverables as they come in, or waiting for the deadline. How a Submitter should make the CMs aware of their Deliverable once ready (GitHub, Discord, forum or Proposal) must be defined in the rules. A "First Come, First Served" format will be similar to the "Free for All". Once one or more Deliverables are approved, the Submitter(s) should be considered as Assigned in Step 3.
 
 ##### 3. The Work is Submitted to the Council
 Regardless of format, once an Assignee, or otherwise qualified Submitter, considers their work done, they create a (final) Spending Proposal, which in total rewards them the agreed amount, links to all relevant discussion and rules, and a link to their work.
@@ -525,7 +525,7 @@ To avoid making this longer than necessary, and hopefully let a system emerge na
 # Governance
 Constantinople introduced a number of important changes to the governance structure of the platform. The most important of these was the enhancement of the platform's proposal system. You can read descriptions of each of the proposal types on the helpdesk article [here](/proposals/README.md).
 
-Most of the proposals are meant to allow the Council to allocate the platforms resources as efficiently as possible. In order to do so, a [tokenomics spreadsheet](https://docs.google.com/spreadsheets/d/13Bf7VQ7-W4CEdTQ5LQQWWC7ef3qDU4qRKbnsYtgibGU/edit?usp=sharing) has been made to assist in the decision making.
+Most of the proposals are meant to allow the Council to allocate the platforms resources as efficiently as possible. In order to do so, a [tokenomics spreadsheet](https://docs.google.com/spreadsheets/d/13Bf7VQ7-W4CEdTQ5LQQWWC7ef3qDU4qRKbnsYtgibGU/edit?usp=sharing) has been made to assist in the decision-making.
 
 ## Proposals
 As a Member (CM or not) you are able to make proposals to be voted on by the Council.
@@ -549,7 +549,7 @@ The types of proposals available include:
 
 To make a proposal:
 1. Click the Proposals tab in the Pioneer sidebar (`/proposals`).
-2. This will provide a view of all of the currently active (as well as past) proposals.
+2. This will provide a view of all the currently active (as well as past) proposals.
 3. If there are fewer than five `active` proposals, you can click the `New Proposal` button at the top of the page.
 4. You will be given a list of proposal types; select the one which is required for your proposal.
 5. Make a note of the staking requirements, ensuring your account balance is sufficient to create the proposal.

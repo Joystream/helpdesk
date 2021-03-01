@@ -37,13 +37,13 @@ This page will contain all information on how to become `Content Curator Lead`, 
 
 # About The Curator Lead
 
-Since the introduction of the proposals system for the Constantinople testnet, the `Council` has had the power to appoint a `Content Curator Lead` for the network.
+Since the introduction of the proposals' system for the Constantinople testnet, the `Council` has had the power to appoint a `Content Curator Lead` for the network.
 
 # Hiring Curator Lead
 
 ## Proposals
 
-Hiring the `Curator Lead` is the responsibility of the `Council` through the proposals system. Three new proposal types have been introduced to support the hiring process, and more have also been added to allow the `Council` to effectively manage the lead once "in office", through slashing, setting the mint capacity, decreasing stake and firing etc.
+Hiring the `Curator Lead` is the responsibility of the `Council` through the proposals' system. Three new proposal types have been introduced to support the hiring process, and more have also been added to allow the `Council` to effectively manage the lead once "in office", through slashing, setting the mint capacity, decreasing stake and firing etc.
 
 ### Create Opening
 
@@ -60,9 +60,9 @@ This can be done very easily through the creation of another proposal by the `Co
 
 ### Processing Applications
 
-The final step in hiring the `Curator Lead` is to create a `Fill Working Group Leader Opening`. The requirements here are simply to choose the relevant opening from the drop-down menu and choose betwen the candidate applications (in JSON format) shown on the page.
+The final step in hiring the `Curator Lead` is to create a `Fill Working Group Leader Opening`. The requirements here are simply to choose the relevant opening from the drop-down menu and choose between the candidate applications (in JSON format) shown on the page.
 
-Once a candidate has been chosen and the final proposal has passed, the focus is now on the new `Curator Lead`...
+Once a candidate has been chosen, and the final proposal has passed, the focus is now on the new `Curator Lead`...
 
 # Hiring Content Curators
 
@@ -71,7 +71,7 @@ As the person responsible for the platforms content curation, the Lead may find 
 ## Using the CLI
 Our newly developed Command-Line Interface (CLI) is an essential tool for the Curator Lead, as it is by far the simplest way to hire and manage `Curator Providers` and applicants for this role. The program and its instructions for use can be found [here](https://github.com/Joystream/joystream/tree/master/cli).
 
-All of the useful commands which can be executed by the `Curator Lead` will require the lead to import their "role" key rather than their "member" key. Consequently, in the CLI the `account:import` and `account:choose` commands will need to be used.
+All the useful commands which can be executed by the `Curator Lead` will require the lead to import their "role" key rather than their "member" key. Consequently, in the CLI the `account:import` and `account:choose` commands will need to be used.
 
 All the commands available for managing the workers are available by using the command `joystream-cli working-groups --help`, which returns:
 ```
@@ -126,7 +126,7 @@ OPTIONS
                                            later)
 ```
 
-Note that although some values are stated as `u128` or other confusing types, you should provide plaintext or numbers, and the CLI will convert them for you. Once this command is run, the prompts to set up the opening are *somewhat* self-explanatory. Feel free to ask, or give it a try with a --dryRun first :)
+Note that although some values are stated as `u128` or other confusing types, you should provide a plaintext or numbers, and the CLI will convert them for you. Once this command is run, the prompts to set up the opening are *somewhat* self-explanatory. Feel free to ask, or give it a try with a --dryRun first :)
 
 
 If successfully submitted, you can look at your Opening using the `working-groups:opening <WGOPENINGID> -g curators`, which returns something like:
@@ -197,7 +197,7 @@ You can find the `WGOPENINGID` in the URL in Pioneer or using the CLI command `w
 
 As soon as the opening is in the `In Review` state, you can start hiring!
 
-Simply run `working-groups:fillOpening <WGOPENINGID> -g curators` where `<WGOPENINGID>` is the same as earlier, and you will be prompted to select the applicants you wish to hire (using a check-box dialog). The usernames of the candidates will be shown so you don't have to worry about numerical IDs for this part.
+Simply run `working-groups:fillOpening <WGOPENINGID> -g curators` where `<WGOPENINGID>` is the same as earlier, and you will be prompted to select the applicants you wish to hire (using a check-box dialog). The usernames of the candidates will be shown, so you don't have to worry about numerical IDs for this part.
 
 # Working As Content Curator Lead
 
@@ -207,10 +207,10 @@ Other than the hiring aspect of the role as `Content Curator Lead`, the lead sho
 
 If necessary, upon discussing with the council, the `Content Curator Lead` can also decide to fire curators who are not performing their jobs adequately.
 
-Most of the time however, the responsibilities of the `Content Curator Lead` will be very similar to those of a standard `Content Curator`. You can read about these responsibilities in [this section](../roles/content-curators#content) of the guide for `Content Curators`.
+Most of the time however, the responsibilities of the `Content Curator Lead` will be very similar to those of a standard `Content Curator`. You can read about these responsibilities in [this section](../content-curators#content) of the guide for `Content Curators`.
 
 ### Curation
-The main task of the `Curators` is curating the content on chain.
+The main task of the `Curators` is curating the content on a chain.
 
 The easiest way is to simply "hide" content by using the `curateContent` command. However, the Curator Lead must first enable curation:
 ```

@@ -58,7 +58,7 @@ In order to be able to successfully apply for a role as a `Content Curator`, you
 You will be able to complete the application process as long as you have generated a keypair, but your application transaction will be discarded by the runtime for a variety of reasons:
 - If you are not a member.
 - If you attempt to apply twice with the same `MemberId`.
-- If you attempt to apply with insufficient stake.
+- If you attempt to apply with an insufficient stake.
 - If you try to stake more tokens than you can (note the application transaction costs 1 JOY)
 - If you apply for a role with a maximum number of slots, with fixed or no stake requirements, and the maximum application slots have been reached.
 - If you try to apply manually through the `Extrinsics` sidebar, you can fail for a variety of other reasons.

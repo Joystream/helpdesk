@@ -1,6 +1,6 @@
 ## Launch
 
-After the upgrade, all current roles, ie. `Storage Providers`, `Council Members` and `Curators` will be fired from their position.
+After the upgrade, all current roles, i.e. `Storage Providers`, `Council Members` and `Curators` will be fired from their position.
 
 -   A new set of initial role parameters will be set by Jsgenesis
 -   A new, initial council will be set by Jsgenesis
