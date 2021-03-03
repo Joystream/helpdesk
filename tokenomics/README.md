@@ -104,7 +104,7 @@ The sum of the rewards earned will be given directly to the individual Council M
 As the Council KPIs mainly apply to prospective Council Members, the full details can be found under their role section [here](/roles/council-members/README.md#council-kpis).
 
 ### Community Bounties
-The Community Bounties are meant to replace the "old" bounty system previously used by Jsgenesis. In discussions with the community, these have been referred to as "Community KPIs", but we've chosen to use the term Community Bounties to properly distinguish them.
+The (Community) Bounties are meant to replace the "old" bounty system previously used by Jsgenesis. In discussions with the community, these have been referred to as "Community KPIs", but we've chosen to use the term Bounties to properly distinguish them.
 
 Jsgenesis will publish these in a format similar to that of a [Council KPI](#council-kpis), but with some key differences:
 - They will not be published at the same regular and predictable intervals

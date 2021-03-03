@@ -55,16 +55,17 @@ If you find a bug or want to improve or add something in the code, documentation
 Fork it, make the changes you want to address, and create a `Pull request`. For our mutual convenience, it would be nice if you made an [Issue](#reporting-issues) first, so we can address whether your work would qualify for a Bounty.
 
 ## Community Bounties
-The Community Bounties are meant to replace the "old" [Bounty](https://github.com/Joystream/bounties) system previously used by Jsgenesis. In discussions with the community, these have been referred to as "Community KPIs", but we've chosen to use the term Community Bounties to properly distinguish them from "regular" [Council KPIs](/tokenomics/README.md#council-kpis).
+The (Community) Bounties are meant to replace the "old" [Bounty](https://github.com/Joystream/bounties) system previously used by Jsgenesis. In discussions with the community, these have been referred to as "Community KPIs", but we've chosen to use the term Bounties to properly distinguish them from "regular" [Council KPIs](/tokenomics/README.md#council-kpis).
 
-Jsgenesis will publish these on our [website](https://www.joystream.org/testnet/) in a format similar to that of a [Council KPI](/tokenomics/README.md#council-kpis), but with some key differences:
+Jsgenesis will publish these first as (Github) issues in the [Community Repo](https://github.com/Joystream/community-repo), before the Council makes a [forum post](https://testnet.joystream.org/#/forum). They can also be found through our [website](https://www.joystream.org/get-started/).
+Unlike Council KPIs,
 - They will not be published at the same regular and predictable intervals
 - They will not necessarily have deadlines
 - Jsgenesis will rarely get involved in managing or assigning them
 
-The last part is key, as the [Council will act as Project Managers](/roles/council-members/README.md#managing-community-bounties), and serve as a bridge between Jsgenesis and the individual or group working on them.
+The last part is key, as the [Council will act as Project Managers](/roles/council-members/README.md#managing-bounties), and serve as a bridge between Jsgenesis and the individual or group working on them. In many cases, they will further hire a Bounty Manager to represent them.
 
-Because of this, you should regularly monitor the [on-chain forum](https://testnet.joystream.org/#/forum), and the [Community Repo](https://github.com/Joystream/community-repo) to stay updated on the status and progress of these before you jump in to action.
+Because of this, you should regularly monitor the [on-chain forum](testnet.joystream.org/#/forum).
 
 ### Types of Tasks
 The tasks associated with these Community Bounties will ideally try to solve some problem either for the community or Jsgenesis, but in some cases, their main purpose will be to create some fun and/or attract new members to the community.
@@ -93,50 +94,23 @@ Over time, the tasks should allow people with different skillsets and interests 
 - Reviewing
   - All the above
 
-### Structure Example
-An example of structure for a Community Bounty, as published by Jsgenesis.
-
-- `id:` - A unique identifier (eg. `5`)
-- `Title:` - The title of the Community Bounty
-- `Reward:` - The maximum reward paid, assuming all `Success Events` are delivered and graded complete
-- `Description:` - A description of the problem solved if all `Success Events` are complete
-- `Success Events:`
-  - `1.` - A precise definition of subtask `1.`
-  - `2.` - A precise definition of subtask `2.`
-  - ...
-  - `n.` - A precise definition of subtask `n.`
-- `Annihilation:` - A precise definition of something that, if it occurs, would result in the entire `Reward` getting lost, even in the event all the `Success Events` are fully completed
-- `Conditions` - Any conditions that must be met, in addition to the `Success Events` themselves
-- `Review period:` - A period of time during which Jsgenesis review and grade the deliverable after it has been "officially" submitted to them.
-
-In addition to these, there is some other information that may or may not be included:
-- `Rules:` - Although it will usually be up to the Council to define the [rules](#rules), Jsgenesis may in some circumstances choose to set them themselves. Examples of this could be:
-  - Specifying a [format](#format) and workflow
-  - Assigning, or "reserving" the rights for one or more community members to work on the KPI for some period of time
-- `Deadline:` - In some cases, a Community Bounty could have a deadline for when the deliverable must be made. Although Jsgenesis reserves the right not to grade or reward any submissions made after the deadline, it doesn't necessarily mean any work will be in vain:
-  - Late submissions may still be accepted, with full or partial rewards
-    - especially if the delay can be attributed to the Council
-  - It may be slightly modified, and re-published under a different `ID`
-  - It may be renewed with a new deadline under a different `ID`
-
 ### Workflow
 As the Council are responsible for establishing the rules, format and workflow, we again advise prospective participants to lookup the specifics for a particular Bounty using the [on-chain forum](https://testnet.joystream.org/#/forum).
-
 
 #### Reward Distribution
 The Council decides how much of the total Bounty reward will go to the Submitter, if the rewards should or can be split, and so forth.
 
 #### Format
-The format should try to optimize for the time, quality, risk and cost, associated with each Bounty. The  [Closed](#closed), [Free For All](#free-for-all) and [First Come, First Served](#first-come-first-served) formats presented are just suggestions.
+The format should try to optimize for the time, quality, risk and cost, associated with each Bounty. In most cases, this means either a ["Open"](#open-format), ["Free For All"](#free-for-all-format) and ["Closed"](#close-format) formats.
 
-##### Closed
-For a Bounty that requires investing lots of time and/or other resources, it may be reasonable to guarantee one or more Appliers that gets Assigned some time to complete all, or some, of the work, without having someone come in and "snipe" the reward.
+##### Free For All Format
+For smaller, and perhaps more creative and subjective Bounty, it may make more sense to leave it as a "free for all". In this case, the Council sets a deadline, picks the best Deliverable(s), and rewards the Submitter(s) as per the rules, similar to a competition in many ways
 
-##### Free For All
-For smaller, and perhaps more creative and subjective Bounty, it may make more sense to leave it as a "free for all". In this case, the Council sets a deadline, picks the best Deliverable(s), and rewards the Submitter(s) as per the rules.
+##### Open Format
+For smaller Bounties, perhaps running indefinitely, where entrants can make multiple submissions and there are few barriers to entry.
 
-##### First Come, First Served
-For smaller, perhaps more time sensitive Bounty, one could choose a format where anyone can enter, but each Submitter's Deliverable is reviewed by the chronological order they are submitted. The first acceptable Deliverable(s) is granted the reward(s).
+##### Closed Format
+For a Bounty that requires investing lots of time and/or other resources, it may be reasonable to guarantee one or more "Applicants" that gets "Assigned", giving them some agreed time to complete all, or some, of the work, without having someone come in and "snipe" the reward.
 
 ##### Other
 In addition to the varieties outlined, other formats can be defined and chosen if they are more appropriate for a specific Bounty.

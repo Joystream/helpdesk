@@ -130,7 +130,7 @@ When Joystream goes live on mainnet, there will be no one there to pay these (Bi
 -   However, all roles on the platform will be compensated by newly minted tJOY tokens, effectively inflating the supply.
 -   In addition to the recurring replenishment, a set of Council KPIs (Key Performance Indicators), will be set by us, to ensure the network is working as intended.
 -   If a KPI is reached, the fiat pool will increase by the amount computed based on the level success for each KPI, new tJOY will be minted proportionally, and these will be distributed to both the `Council Members` and the voters that elected them. As a consequence, this will not affect the value of token holders not participating in the governance.
--   Other ways that the tJOY supply and the fiat pool can increase include through community bounties, competitions, spending proposals, etc.
+-   Other ways that the tJOY supply and the fiat pool can increase include through bounties, competitions, spending proposals, etc.
 
 An overview on how the new incentive scheme works, and how it interacts with the new proposal model that gives far more power and responsibility to users via the council, can be found [here](/tokenomics).
 
@@ -242,11 +242,11 @@ When making a new "Set (Curator) Lead" proposal, one can propose to
 <p align="center""><img src="img/bugreporters.svg" width="500"></p>
 
 ### Description
-Unlike the other roles, `Builders` are not a formal role, with automatic on-chain rewards. Instead, Jsgenesis will create "Community Bounties", with specified tasks, conditions and rewards.
+Unlike the other roles, `Builders` are not a formal role, with automatic on-chain rewards. Instead, Jsgenesis will create "Bounties", with specified tasks, conditions and rewards.
 
 The tasks associated with these Bounties will ideally try to solve some problem either for the community or Jsgenesis, but in some cases, their main purpose will be to create some fun and/or attract new members to the community. In some cases, Bounties may be created as a result of requests from the Council or the community.
 
-Over time, the tasks should allow people with different skillsets and interests to participate. Most challenges will be easier if you are somewhat technical or creative, but in other situations it will simply require putting in some time and effort. To learn more about Community Bounties, go to the `Builders` section [here](/roles/builders).
+Over time, the tasks should allow people with different skillsets and interests to participate. Most challenges will be easier if you are somewhat technical or creative, but in other situations it will simply require putting in some time and effort. To learn more about Bounties, go to the `Builders` section [here](/roles/builders).
 
 ### Incentives
 

@@ -453,29 +453,200 @@ The main way of dealing with Leads is through the [proposal system](#proposals).
 - fire and slash all or parts of the Lead's stake
 - decrease the stake of a Lead (in case the exchange rate has made the stake bigger than "justifiable")
 
-### Managing Community Bounties
-The concept and some examples of Community Bounties (previously referred to as "Community KPIs") are explained [here](/community-bounties), so this section will rather focus on the Council's role in these as Project Managers. What this entails exactly will vary depending on the type, complexity, and stage of the active Community Bounties themselves, but "good" Project Management will be rewarded through the [Council KPIs](#council-kpis).
+### Managing Bounties
+The concept and some examples of (Community) Bounties (previously referred to as "Community KPIs") are explained [here](/community-bounties), so this section will rather focus on the Council's role in these as Project Managers. What this entails exactly will vary depending on the type, complexity, and stage of the active Bounties themselves, but "good" Project Management will be rewarded through the [Council KPIs](#council-kpis).
 
 A Community Bounty will in general be graded based on deliverables, with conditions similar to what is described [here](#council-deliverables).
 
 Unlike the Council KPIs, the rewards for fulfilling them will not go directly to the CMs, but rather increase the [Fiat Pool](/tokenomics/README.md#fiat-pool), thus increasing the value of all the token holders. However, it's assumed that most, if not all, of these rewards will be directed at the group or individual that made the deliverable.
 
-#### Reward Distribution
-The Council decides how much of the total Bounty reward will go to the Submitter, if the rewards should or can be split, and so forth.
+This section contains examples with suggestions for the step-by-step workflow some "common" formats for Bounties - namely ["Open"](#open-format), ["Free For All"](#free-for-all-format) and ["Closed"](#close-format) formats. The format should try to optimize for the time, quality, risk and cost, associated with each Bounty.
 
-#### Format
-The format should try to optimize for the time, quality, risk and cost, associated with each Bounty. The  [Closed](#closed), [Free For All](#free-for-all) and [First Come, First Served](#first-come-first-served) formats presented are just suggestions.
+Note that the target audience for this is not the participants themselves, but rather the Council Members.
 
-##### Closed
-For a Bounty that requires investing lots of time and/or other resources, it may be reasonable to guarantee one or more Appliers that gets Assigned some time to complete all, or some, of the work, without having someone come in and "snipe" the reward.
+#### Definitions of Terms
+- Community Repo - this [Github repo](https://github.com/Joystream/community-repo/issues)
+- Bounty Issue - meaning a github issue made by `bwhm` or `blrhc` of Jsgenesis in the Community Repo
+- Council Member (CM) - a (current) member of the Joystream Council
+- Council Secretary - a CM elected by the other CMs to be the "main" representative of the Council towards Jsgenesis
+- Bounty Manager (BM) - a Community Member (can be a CM as well) elected by the Council to be responsible for managing all Bounties for some period of time, or "just" this specific Bounty. Defaults to the Council Secretary if no other person is chosen
+- Forum - the on-chain [Joystream](https://testnet.joystream.org/#/forum/) forum
 
-##### Free-For-All
-For smaller, and perhaps more creative and subjective Bounty, it may make more sense to leave it as a "free-for-all". In this case, the Council sets a deadline, picks the best Deliverable(s), and rewards the Submitter(s) as per the rules.
+#### Councils Role
+As seen in below, the amount of work managing a Bounty will in some cases be substantial. Previously, it was intended that the Council should perform this work as group, but it has become clear that hiring a single (or small group) to act as Bounty Manager(s), either for all open Bounties, or individual ones, is needed for the system to work.
 
-##### First Come, First Served
-For smaller, perhaps more time sensitive Bounty, one could choose a format where anyone can enter, but each Submitter's Deliverable is reviewed by the chronological order they are submitted. The first acceptable Deliverable(s) is granted the reward(s).
+Although the idea of forcing the Council to communicate and co-operate their way through this was noble, it leads to an example of the tragedy of the commons.
 
-##### Other
+As managing the Bounties will be a significant part of their (potential) KPI rewards, they have some excess resources and incentives to hire the "right" people. They can either pay for this out of pocket, request funding for this through spending proposals, reserve some part of the Bounty reward for this purpose or by asking Jsgenesis for designated funding.
+
+In the end, the Council will still be responsible for the work the BM does, so they should still verify the spending and/or text proposals made, and seek feedback of the BMs performance (eg. responsiveness and communication) from participants.
+
+#### General Steps
+Jsgenesis creates a Bounty Issue in the Community Repo with a new Bounty. This Bounty Issue is meant for the Council first and foremost, and ideally, the person(s) attempting, or successfully manages, to solve the Bounty should not even *need* to read this.
+
+In this Bounty Issue, Jsgenesis will explain/outline:
+- what the bounty is for
+- success events and their associated rewards
+- some restrictions/requirements
+- how the final submission should be made before it is graded by Jsgenesis
+
+After this, the BM, parses the Bounty Issue, and starts drafting what will be the original post(s) in the Forum thread. In this post, the following should be made clear:
+- The *full* Scope of Work
+- The *full* set of rules and conditions, including budgets
+  - meaning, for both points above, not only what is covered in the Bounty Issue itself, but any other information the BM sees fitting to include
+- The *full* workflow for all relevant parties, including deadlines etc.
+  - what this entails will be addressed for each individual [Bounty Format](#bounty-format) below.
+
+If the BM needs clarity or more information than what is covered in the Bounty Issue, reply to it for clarity.
+
+Once the draft is completed, the BM creates a text or spending proposal (if funding is needed for their tasks) presenting a draft of the Forum post that will be made for the bounty. If the text is too long to fit in the proposal, a link the the text is shared in its place.
+
+If the proposal is approved, with or without any agreed corrections, the Forum thread is created with the agreed content.
+
+Finally, the BM replies with the content in the Bounty Issue, and makes a PR to the Community Repo, updating the information [required](https://github.com/Joystream/community-repo/tree/master/bounties-overview).
+
+#### Bounty Formats
+If the Bounty Issue doesn't include, or just suggests a format, the Council is free to choose.
+
+If a format is specified, there is still some freedom to choose within that realm. What is listed below are simply examples.
+
+#### Open Format
+An example of the "Open" format is Bounty [#10 - "Upload Public Domain Content"](https://github.com/Joystream/community-repo/issues/88).
+
+Anyone (with a membership) can participate in this bounty, it has a fairly low barrier to entry, and will run indefinitely.
+
+However, managing this bounty is not as straightforward, as one would expect a large number of entries, from many different users.
+
+##### Full Workflow
+Involved parties, and their responsibilities:
+- Jsgenesis
+  - initial Bounty Issue
+  - final grading
+- the Bounty Manager
+  - deploying the Bounty
+  - initial grading
+  - weekly reports and spending proposals
+- the Council
+  - approving the Bounty
+  - voting spending proposals
+- Content Curators
+  - approving uploaded Videos and Channels
+- Entrants
+  - creating channels and uploading videos for rewards
+
+1. The Bounty Manager sets some Bounty specific rules (in addition to the [General Steps](#general-steps)), such as:
+  - Required metadata
+  - Other requirements for a video to be rewarded `$n` (length, resolution, encoding, etc.)
+  - Exactly how an Entrant should submit their videos (see 3.)
+  - When they will perform their weekly grading
+  - The role of the Content Curators
+  - etc.
+2. The Entrant sees the Bounty, and uploads one or more videos.
+3. After doing so, they post in the bounties Forum post, with the following information:
+  - `channelId`(s)
+  - `videoId`(s)
+  - Brief explanation of the videos uploaded, and perhaps what they expect the reward for each video should be.
+4. The Content Curators should, as is their role, regularly go through _all_ videos uploaded on the platform, curate channels and videos, and post updates on the Forum.
+5. The Bounty Manager, when performing their weekly grading and reporting, can look through the Content Curators Forum thread, and see what has been approved or not. If a video/channel posted in 2. is not approved, it need not be graded. Once the BM has completed grading all (approved) entries, they create a report containing:
+  - For each Entrant identified by their membershipId, membershipHandle and account
+    - all channels and videos by their IDs
+    - with grading (ie. reward) for each video ID
+  - A summary of the rewards
+  - A list of all videos/channels that was not approved by Curators
+6. This report is submitted as a PR to the Community Repo, along with a Spending Proposal equalling the sum of the Rewards (plus, if applicable, a payment for their own labour).
+7. If approved by the Council, a review of the PR containing the report is requested by Jsgenesis, and the BM sends the funds minted by the Proposal to the rightful owners.
+8. Jsgenesis grades the report, (including some spot checks of the videos), and adds the amount they see applicable to the Fiat Pool.
+
+#### Free for All Format
+An example of the "Open" format is Bounty [#11 - "Design Community Repo Banner"](https://github.com/Joystream/community-repo/issues/89).
+
+Similar to the [Open](#open-format) format, anyone (with a membership) can participate in this bounty, but it requires a little more specialized skills. It's similar to a competition in many ways, as there can be unlimited entrant, but only a few winners.
+
+##### Full Workflow
+Involved parties, and their responsibilities:
+- Jsgenesis
+  - initial Bounty Issue
+  - final grading
+- the Bounty Manager
+  - deploying the Bounty
+  - initial grading
+  - spending proposals
+- the Council
+  - approving the Bounty
+  - voting on spending proposals
+- Entrants
+  - designing covers
+- Candidates
+  - entrants the BM picks as winners
+
+1. The Bounty Manager sets some Bounty specific rules (in addition to the [General Steps](#general-steps)), such as:
+  - Where and how a Banner should be submitted initially (eg. the forum or Community Repo)
+  - Exact specifications of a banner (eg. file format(s), resolutions, etc.)
+  - Information on how to find resources (eg. "blank canvas", fonts, preferred themes, etc.)
+  - Deadline(s) for submissions
+  - Reserves the right to extend deadlines under certain conditions
+  - etc.
+2. Entrants sees the Bounty, and creates banners.
+3. After doing so, they post in the bounties Forum post (and/or makes a draft PR to the Community Repo), with their work.
+4. The BM performs their reviews, and selects up to three Candidates (if there are fewer than three, the BM can choose to extend the deadline). These are encourage to make spending proposals.
+5. The Candidates (if they haven't already), opens PRs with their work to the Community Repo, and make their spending proposals - linking to the PRs, and the BMs approvals.
+6. If one or more is approved by the Council, the Candidates mark their PR ready for review, and the BM requests a review by Jsgenesis.
+8. Jsgenesis grades the work and adds the amount they see applicable to the Fiat Pool.
+
+#### Closed Format
+In Bounties that requires significant time and/or other resources to complete, and with only one "winner" in practice, Jsgenesis considers it fair to all parties to have an application process culminating in a single Community Member being assigned the Bounty for some agreed time.
+
+Most `coding` and `resarch` Bounties fits equally well as examples, but [#8 -  "Ledger for Joystream"](https://github.com/Joystream/community-repo/issues/86) seems most suitable due to its extensive scope.
+
+##### Full Workflow
+Involved parties, and their responsibilities:
+- Jsgenesis
+  - initial Bounty Issue
+  - final grading
+- the Bounty Manager
+  - deploying the Bounty
+  - advising the Council
+  - initial grading
+- the Council
+  - approving the Bounty
+  - voting on spending proposals
+- Applicants
+  - Community Members applying to be Assigned the Bounty
+- Assigned
+  - the Applicant chosen
+
+
+1. The Bounty Manager sets some Bounty specific rules (in addition to the [General Steps](#general-steps)), such as:
+  - Applications for the bounty will be accepted for until blockheight `n`, say 2 weeks from now.
+  - The BM reserves the right to extend the deadline, if no "suitable" Applicants apply
+    - If that is not the case, an Applicant will be assigned within blockheight `n+43200`, say within three days of the Application stage ending
+  - The application must contain:
+    - Hardware wallets owned by the Applicant (Ledger required)
+    - Experience with using cryptocurrencies
+    - Milestones and timelines
+    - Brief explanation of why they should be Assigned the Bounty
+  - The BM is free to suggest or set parameters for milestones (eg. 3), timelines (eg. max two weeks for each), and other reporting requirements
+    - A milestone implies some partial delivery at an agreed time, with some part of the compensations being paid out on completion.
+2. Applicants apply for the Bounty. (They may also ask questions, and set some conditions if applicable.)
+3. After the application stage is over, the Bounty Manager either:
+  - Assigns an Applicant themselves, or makes a text proposal to the Council proposing to assign one (depending on what was agreed in [initially](#general-steps))
+  - Extend the Application process - possible with some new terms (eg. requesting more funding, longer deadlines, etc.)
+4. Assuming an Applicant is now Assigned, they start working with the following agreements:
+  - Milestone 1 covers Success Events 1 and 2, will pay the full amount ($100) on completion, if submitted within blockheight `n+43200+72000` (five days) and fully accepted. If not submitted, a new Applicant may be Assigned, unless an agreement is made.
+  - Milestone 2 covers Success Event 3, and will pay the full amount ($100) on completion, if submitted within blockheight `n+43200+72000+72000` (ten days) and fully accepted. If not submitted, a new Applicant may be chosen, unless an agreement is made.
+  - Milestone 3 covers Success Events 4 and 5, and will pay the full amount ($250) on completion, if submitted within blockheight `n+43200+72000+72000+72000` (fifteen days) and fully accepted. If not submitted, a new Applicant may be chosen, unless an agreement is made.
+5. Before Milestone 1 is reached, the Assigned makes a draft PR to the Community Repo, and a spending proposal for the amount agreed (or less, if the Assigned is themselves aware that their work is incomplete). The Assigned should communicate this to the BM.
+6. The BM advices the Council (by replying to the Proposal) on whether to approve or not.
+  - If the BM advices approval, and the Council approves the proposal, the Assigned proceeds to Milestone 2
+  - If the BM advices not approving, they must state why. If the Council agrees, the BM decides whether to assign a new Applicant, or extend the deadline(s)
+  - Any other outcome should lead to the BM getting replaced.
+7. Assuming step 6. was approved, repeat steps 5. and 6. (except instead of a new PR, new commits are pushed to the draft PR)
+8. Assuming step 6. and 7. was approved, the Assigned makes their (hopefully) final commits to the PR, and creates their final spending proposal.
+9. The BM advices the Council (by replying to the Proposal) on whether to approve or not.
+10. If approved, the Assigned marks the PR "ready for review", and the BM assigns Jsgenesis for review.
+11. Jsgenesis grades the "entire" Bounty, and increases the fiat pool with the equivalent amount.
+
+#### Other
 In addition to the varieties outlined, other formats can be defined and chosen if they are more appropriate for a specific Bounty.
 
 A "new" Council must honor any agreements and rules set by their predecessors, for as long as the rules say so.
@@ -487,40 +658,6 @@ The workflow will depend both on the [Reward Distribution](#reward-distribution)
 - In some cases, it may make sense to break a Bounty up in to milestones, with partial rewards at each stage. These builds trust as the Council can see the progress being made, and the Assignee can get chunks of the reward along the way.
 - In other cases, the person may need some initial funding to get started.
 - For "Closed" formats, the specifics of the workflow could be part of the Applier's application for participation.
-
-#### Steps
-
-##### 1. New Bounty Made
-Although the Council decides on the rules and reward distribution, they listen for input from others in the platform forum and on Discord. Within a reasonable time (as stated in the Council KPI), the rules for the Bounty are presented in Text Proposal, voted through, and published on GitHub.
-
-##### 1.5. Work is Assigned
-Depending on the rules chosen, there may be a step to assign the work to one or more Assignees.
-
-This will require some back and forth through multiple Proposals, and should thus be avoided for less complex Bounties.
-
-##### 2. Work Happens
-For a "Closed" format, it can mean a series of Text and Funding Proposals, waiting, and ongoing communication between the Assigned/Assignees, and the CMs.
-
-For a "Free for All", it can be mean reviewing submitted Deliverables as they come in, or waiting for the deadline. How a Submitter should make the CMs aware of their Deliverable once ready (GitHub, Discord, forum or Proposal) must be defined in the rules. A "First Come, First Served" format will be similar to the "Free for All". Once one or more Deliverables are approved, the Submitter(s) should be considered as Assigned in Step 3.
-
-##### 3. The Work is Submitted to the Council
-Regardless of format, once an Assignee, or otherwise qualified Submitter, considers their work done, they create a (final) Spending Proposal, which in total rewards them the agreed amount, links to all relevant discussion and rules, and a link to their work.
-
-Once the Council considers the Deliverables complete, this final Spending Proposal is "approved" and successfully executed.
-
-##### 4. Jsgenesis Grading
-After Step 3, the Submitter has received their reward, and their work now "belongs" to the platform.
-
-If the Deliverable is to be submitted to the [community-repo](https://github.com/Joystream/community-repo/), the Council Secretary approves the pull request. Regardless, the Secretary must notify Jsgenesis.
-
-Jsgenesis will then review and grade the Deliverable as such. This can result in a reward anywhere between nothing (failed), or everything (full score), and the fiat pool will be increased accordingly.
-
-It may be that this reward is smaller than that which was rewarded to the Submitter. This will in some cases cost the token holders, and in other cases be deducted from the Councils KPI rewards. Regardless, the Council will likely be punished.
-
-#### Councils Role
-As seen in the workflow, the Council's role in the Community Bounties is substantial. They will work as the Project Managers, and are at the end held accountable for the quality of the Deliverable they submit for grading. These tasks may be a formal part of the Councils KPI directly, but the efficiency, creativity, rules, workflow, speed and outcome of the process will anyway be part of the Jsgenesis Council voting process.
-
-To avoid making this longer than necessary, and hopefully let a system emerge naturally, no examples are included.
 
 # Governance
 Constantinople introduced a number of important changes to the governance structure of the platform. The most important of these was the enhancement of the platform's proposal system. You can read descriptions of each of the proposal types on the helpdesk article [here](/proposals/README.md).
@@ -549,7 +686,7 @@ The types of proposals available include:
 
 To make a proposal:
 1. Click the Proposals tab in the Pioneer sidebar (`/proposals`).
-2. This will provide a view of all the currently active (as well as past) proposals.
+2. This will provide a view of all of the currently active (as well as past) proposals.
 3. If there are fewer than five `active` proposals, you can click the `New Proposal` button at the top of the page.
 4. You will be given a list of proposal types; select the one which is required for your proposal.
 5. Make a note of the staking requirements, ensuring your account balance is sufficient to create the proposal.
