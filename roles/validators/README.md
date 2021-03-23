@@ -102,7 +102,7 @@ $ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joy-testn
 # Assuming it gets saved in your ~/Downloads folder:
 $ mv ~/Downloads/joystream-node-3.3.0-fdb75f5ec-x86_64-macos.tar.gz ~/
 ---
-$ tar -vxf joystream-node-3.3.0-fdb75f5ec-x86_64-macos.tar.gz
+$ tar -vzxf joystream-node-3.3.0-fdb75f5ec-x86_64-macos.tar.gz
 $ ./joystream-node --chain joy-testnet-4.json --pruning archive --validator
 ```
 - If you want your node to have a non-random identifier, add the flag `--name <nodename>`
@@ -164,10 +164,10 @@ Open the terminal:
 $ cd ~/
 # 64 bit debian based Linux
 $ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joystream-node-3.3.0-fdb75f5ec-x86_64-linux-gnu.tar.gz
-$ tar -vxf joystream-node-3.3.0-fdb75f5ec-x86_64-linux-gnu.tar.gz
+$ tar -vzxf joystream-node-3.3.0-fdb75f5ec-x86_64-linux-gnu.tar.gz
 # armv7 (eg. raspberry pi)
 $ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joystream-node-3.3.1-arm-v7.tar.gz
-$ tar -vxf joystream-node-3.3.1-arm-v7.tar.gz
+$ tar -vzxf joystream-node-3.3.1-arm-v7.tar.gz
 # For both
 $ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joy-testnet-4.json
 $ $ ./joystream-node --chain joy-testnet-4.json --pruning archive --validator
