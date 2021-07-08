@@ -30,7 +30,6 @@ query {
     category {
       name
     }
-    duration
     ownerMember {
       id
       handle
