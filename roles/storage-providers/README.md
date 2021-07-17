@@ -85,7 +85,7 @@ Some of the default configurations needs to be changed, in order to get better p
 # cuz xyz
 ipfs config --bool Swarm.DisableBandwidthMetrics true
 # Default only allows storing 10GB, so:
-ipfs config Datastore.StorageMax "200GB"
+ipfs config Datastore.StorageMax "400GB"
 # cuz xyz
 ipfs config --json Gateway.PublicGateways '{"localhost": null }'
 ```
@@ -156,7 +156,7 @@ $ nano ~/Caddyfile
 # Paste in everything below the stapled line
 ---
 # Storage Node API
-https://<your.cool.url/storage>/* {
+https://<your.cool.url>/storage/* {
         route /storage/* {
                 uri strip_prefix /storage
                 reverse_proxy localhost:3000
